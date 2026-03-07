@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prism Academy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+</a>
+    <style>
+        
+        /* FIXED: Testimonial Slider CSS */
+        .testimonial-slider {
+            max-width: 700px;
+            margin: 0 auto;
+            position: relative;
+            min-height: 200px;
+            padding: 20px;
+        }
+        
+        .testimonial {
+            display: none;
+            text-align: center;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 15px;
+        }
+        
+        .testimonial.active {
+            display: block;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        
+        .testimonial p {
+            font-size: 1rem;
+            font-style: italic;
+            color: #555;
+            margin-bottom: 15px;
+            line-height: 1.8;
+        }
+        
+        .testimonial h4 {
+            color: #4f46e5;
+            font-weight: 600;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        /* Dots */
+        .testimonial-dots {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .dot {
+            width: 12px;
+            height: 12px;
+            background: #ccc;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .dot.active {
+            background: #4f46e5;
+            transform: scale(1.3);
+        }
+    </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+   <div class="logo">
+    <img src="prism logo.jpg" alt="Prism Academy Logo" class="logo-img">
+    <span>Prism Academy</span>
+</div>
+    <ul class="nav-links">
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#join">Join</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+    </ul>
+</nav>
+<!-- HERO -->
+<header class="hero-section">
+    <div class="hero-content" data-aos="fade-down">
+        <h1>Unlock Your Language Potential</h1>
+        <p>Learn Urdu, French, IELTS & Spoken English with expert tutors.</p>
+        <a href="#join" class="btn-primary">Enroll Today</a>
+    </div>
+    <div class="floating-shapes">
+        <span></span><span></span><span></span><span></span>
+    </div>
+</header>
+
+<!-- COURSES -->
+<section id="courses" class="courses-section">
+    <h2 data-aos="fade-up">Our Courses</h2>
+    <div class="course-cards">
+        <div class="card" data-aos="zoom-in">
+            <i class="fas fa-language fa-3x"></i>
+            <h3>Urdu</h3>
+            <p>Learn Urdu from basics to fluency — reading, writing & speaking.</p>
+            <a href="#join" class="btn-card">Learn More</a>
+        </div>
+        <div class="card" data-aos="zoom-in" data-aos-delay="100">
+            <i class="fas fa-flag-usa fa-3x"></i>
+            <h3>Spoken English</h3>
+            <p>Master everyday English conversations with confidence.</p>
+            <a href="#join" class="btn-card">Learn More</a>
+        </div>
+        <div class="card" data-aos="zoom-in" data-aos-delay="200">
+            <i class="fas fa-globe fa-3x"></i>
+            <h3>French</h3>
+            <p>Bonjour! Start your journey in French language and culture.</p>
+            <a href="#join" class="btn-card">Learn More</a>
+        </div>
+        <div class="card" data-aos="zoom-in" data-aos-delay="300">
+            <i class="fas fa-book fa-3x"></i>
+            <h3>IELTS</h3>
+            <p>Get ready for IELTS with exam strategies, practice & feedback.</p>
+            <a href="#join" class="btn-card">Learn More</a>
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="about-section" data-aos="fade-right">
+    <h2>About Prism Academy</h2>
+    <p>We provide top-quality language education with experienced instructors and practical methods that help you excel in communication and exams.</p>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials" class="testimonials-section">
+    <h2 data-aos="fade-up">What Students Say</h2>
+    <div class="testimonial-slider" data-aos="fade-up">
+        <!-- Testimonial 1 -->
+        <div class="testimonial active">
+            <p>"I had an amazing experience learning French here. The faculty is extremely professional, patient, and knowledgeable. They make even the toughest grammar concepts easy to understand with practical examples and engaging activities."</p>
+            <h4>- Arsh Bhullar</h4>
+        </div>
+        <!-- Testimonial 2 -->
+        <div class="testimonial">
+            <p>"I had a wonderful experience at prism academy. The staff is very professional, friendly, and always ready to help. The teaching quality is excellent, and they make learning French both enjoyable and effective."</p>
+            <h4>- Harsimran Singh</h4>
+        </div>
+        <!-- Testimonial 3 -->
+        <div class="testimonial">
+            <p>"I am living in Canada and taking classes from Kamaljeet Kaur. She is very knowledgeable and encouraging. Each class is well-organized and she always makes sure to explain concepts clearly. Highly recommended!"</p>
+            <h4>- Khushveer Kaur</h4>
+        </div>
+        <!-- Testimonial 4 -->
+        <div class="testimonial">
+            <p>"Highly recommended! I've had an amazing experience learning French with Kamaljeet Ma'am! She is incredibly knowledgeable, patient, and passionate about teaching. Her way of explaining complex grammar rules makes it so much easier."</p>
+            <h4>- Jaskirat</h4>
+        </div>
+        <!-- Testimonial 5 -->
+        <div class="testimonial">
+            <p>"Highly recommend! Me and my friend are taking classes from Canada. She is very helpful and has very good knowledge about the language. We really enjoy studying with her!"</p>
+            <h4>- Gurveen Kaur</h4>
+        </div>
+        <!-- Testimonial 6 -->
+        <div class="testimonial">
+            <p>"I've had a great experience learning French with Kamaljit Mam. I'm currently taking online classes from her while living in Toronto, Canada, and it's been incredibly convenient and effective."</p>
+            <h4>- Mana Sohi</h4>
+        </div>
+        <!-- Testimonial 7 -->
+        <div class="testimonial">
+            <p>"I am currently residing in Canada, I just started my French classes with Ms. Kamaljit Kaur and I can confidently say that she is very good at teaching the language as she focuses on clearing the grammatical stuff first."</p>
+            <h4>- Janhvi Verma</h4>
+        </div>
+        <!-- Testimonial 8 -->
+        <div class="testimonial">
+            <p>"As someone who is learning french online from here while living in canada, my experience has been pretty great. Everything they teach is really clear and understandable."</p>
+            <h4>- Eshpuneet Kaur Sekhon</h4>
+        </div>
+        <!-- Testimonial 9 -->
+        <div class="testimonial">
+            <p>"Basically I am living in Canada and taking French classes from kamaljit mam, they teach you with dedication, clear all doubts, what is more they provide you material with online class and explain use of words. If you are looking for a genuine teacher to learn French, I will highly recommend her."</p>
+            <h4>- John X</h4>
+        </div>
+        <!-- Testimonial 10 -->
+        <div class="testimonial">
+            <p>"I had a great experience at prism academy of languages. The teachers are friendly, and made learning French enjoyable. The class of limited students allows personalized attention for each."</p>
+            <h4>- Vanshu Sharma</h4>
+        </div>
+    </div>
+    
+    <!-- Navigation Dots -->
+    <div class="testimonial-dots">
+        <span class="dot active" onclick="goToSlide(0)"></span>
+        <span class="dot" onclick="goToSlide(1)"></span>
+        <span class="dot" onclick="goToSlide(2)"></span>
+        <span class="dot" onclick="goToSlide(3)"></span>
+        <span class="dot" onclick="goToSlide(4)"></span>
+        <span class="dot" onclick="goToSlide(5)"></span>
+        <span class="dot" onclick="goToSlide(6)"></span>
+        <span class="dot" onclick="goToSlide(7)"></span>
+        <span class="dot" onclick="goToSlide(8)"></span>
+        <span class="dot" onclick="goToSlide(9)"></span>
+    </div>
+</section>
+
+<!-- JOIN FORM WITH CONTACT NO -->
+<section id="join" class="join-section" data-aos="fade-up">
+    <h2>Join Prism Academy</h2>
+    <form class="join-form" id="joinForm">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <input type="tel" id="phone" placeholder="Your Phone Number" required>
+        <select id="course" required>
+            <option value="">Select Course</option>
+            <option value="Urdu">Urdu</option>
+            <option value="French">French</option>
+            <option value="IELTS">IELTS</option>
+            <option value="Spoken English">Spoken English</option>
+        </select>
+        <button class="btn-primary" type="submit">Send to WhatsApp</button>
+    </form>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <p>© 2026 Prism Academy | Follow us:</p>
+    <div class="social-icons">
+        <a href="https://facebook.com/yourpage" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://instagram.com/_prism.academy" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://twitter.com/yourpage" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="tel:+9646123027"><i class="fas fa-phone-alt"></i></a>
+        <a href="https://wa.me/9646123027" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </div>
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+    AOS.init({duration: 1000});
+    
+    // ==========================================
+    // TESTIMONIAL SLIDER
+    // ==========================================
+    
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.testimonial');
+    const dots = document.querySelectorAll('.dot');
+    const totalSlides = slides.length;
+    
+    console.log('Total testimonials found:', totalSlides);
+    
+    function showSlide(index) {
+        slides.forEach(function(slide) {
+            slide.classList.remove('active');
+        });
+        
+        dots.forEach(function(dot) {
+            dot.classList.remove('active');
+        });
+        
+        slides[index].classList.add('active');
+        dots[index].classList.add('active');
+    }
+    
+    function nextSlide() {
+        currentSlide++;
+        if (currentSlide >= totalSlides) {
+            currentSlide = 0;
+        }
+        showSlide(currentSlide);
+    }
+    
+    function goToSlide(n) {
+        currentSlide = n;
+        showSlide(currentSlide);
+    }
+    
+    // Auto-rotate every 10 seconds
+    setInterval(nextSlide, 10000);
+    
+    // Make function available globally
+    window.goToSlide = goToSlide;
+    
+    // ==========================================
+    // FORM TO WHATSAPP (WITH PHONE NUMBER)
+    // ==========================================
+    
+    document.getElementById('joinForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Get all form values including phone
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const phone = document.getElementById('phone').value;
+        const course = document.getElementById('course').value;
+        
+        // Your WhatsApp number (without +)
+        const whatsappNumber = '9646123027';
+        
+        // Format message with phone number included
+        const message = `*New Enrollment Query*%0A%0A` +
+                        `*Name:* ${name}%0A` +
+                        `*Email:* ${email}%0A` +
+                        `*Phone:* ${phone}%0A` +
+                        `*Course:* ${course}%0A%0A` +
+                        `Please contact me regarding enrollment.`;
+        
+        // Redirect to WhatsApp
+        window.open(`https://wa.me/${whatsappNumber}?text=${message}`, '_blank');
+        
+        // Reset form
+        this.reset();
+        
+        alert('Thank you! You will be redirected to WhatsApp to send your query.');
+    });
+    
+    console.log('Testimonial slider initialized!');
+</script>
+
+</body>
+</html>
